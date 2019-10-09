@@ -1,5 +1,5 @@
-import React from "react";
-import "./Button.scss";
+import React from 'react';
+import './Button.scss';
 
 interface Props {
     text: string;
@@ -8,7 +8,7 @@ interface Props {
 }
 
 const Button = ({ text, clicked, btnClass }: Props): JSX.Element => {
-    let classes = "btn";
+    let classes = 'btn';
     if (btnClass) {
         classes = `btn ${btnClass}`;
     }

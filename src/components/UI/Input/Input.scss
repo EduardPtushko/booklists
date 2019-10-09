@@ -1,0 +1,31 @@
+@import '../../../styles/variables.scss';
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    margin-bottom: 0.75em;
+    font-family: Open Sans;
+
+    &-text {
+        margin-bottom: 0.15em;
+        font-weight: 300;
+    }
+}
+
+.form-control {
+    padding: 0.5em;
+    font-size: 1rem;
+    border: 1px solid $color-grey;
+    outline: none;
+    border-radius: 5px;
+    font-weight: 300;
+
+    &:focus {
+        border-color: $color-success;
+    }
+}
+
+.form-control.invalid {
+    border: 1px solid $color-error;
+}
