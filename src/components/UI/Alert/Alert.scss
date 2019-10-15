@@ -1,0 +1,18 @@
+@import '../../../styles/variables.scss';
+
+.alert {
+    padding: 1em 0;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 0.75em;
+
+    &.success {
+        color: $color-success;
+        border: 1px solid $color-success;
+    }
+
+    &.danger {
+        color: $color-error;
+        border: 1px solid $color-error;
+    }
+}
