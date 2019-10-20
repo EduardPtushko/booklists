@@ -1,0 +1,42 @@
+@import '../../styles/variables.scss';
+
+#book-table {
+    width: 100%;
+    border-collapse: collapse;
+
+    th,
+    td {
+        border-bottom: 1px solid #ddd;
+        padding: 0.75rem 0;
+    }
+
+    th {
+        text-align: left;
+        font-weight: 400;
+    }
+
+    td {
+        font-weight: 100;
+        width: 35%;
+    }
+
+    td:nth-of-type(3) {
+        width: 20%;
+    }
+
+    td:last-of-type {
+        text-align: center;
+        width: 10%;
+        color: $color-error;
+        transition: all 0.2s;
+
+        &:hover {
+            transform: scale(1.2);
+            font-weight: 300;
+        }
+    }
+
+    tbody tr:hover {
+        background-color: darken($color: #fff, $amount: 0.8);
+    }
+}
