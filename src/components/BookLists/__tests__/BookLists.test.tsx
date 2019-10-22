@@ -2,25 +2,11 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import BookLists from '../BookLists';
 import BookList from '../../BookList/BookList';
+import { books } from '../../../../test/fixtures/books';
 
 describe('BookLists', (): void => {
     const props = {
-        books: [
-            {
-                title: 'Book1',
-                author: 'John Doe',
-                ISBN: '12345',
-                id: 'xjfodfjf',
-                onDelete: jest.fn(),
-            },
-            {
-                title: 'Book2',
-                author: 'Steven King',
-                ISBN: '23456',
-                id: 'x3nf9f',
-                onDelete: jest.fn(),
-            },
-        ],
+        books,
         onDelete: jest.fn(),
     };
 
