@@ -5,16 +5,17 @@ interface Props {
     text: string;
     clicked?: () => void;
     btnClass?: string;
+    isValid?: boolean;
 }
 
-const Button = ({ text, clicked, btnClass }: Props): JSX.Element => {
+const Button = ({ text, clicked, btnClass, isValid }: Props): JSX.Element => {
     let classes = 'btn';
     if (btnClass) {
         classes = `btn ${btnClass}`;
     }
 
     return (
-        <button onClick={clicked} className={classes}>
+        <button disabled={!isValid} onClick={clicked} className={classes}>
             {text}
         </button>
     );
