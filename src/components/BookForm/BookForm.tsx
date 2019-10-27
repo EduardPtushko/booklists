@@ -95,10 +95,10 @@ const BookForm = ({ onAddBook }: Props): JSX.Element => {
                 />
             ))}
             <Button
-                disabled={
-                    !bookForm.Title.valid &&
-                    !bookForm.Author.valid &&
-                    !bookForm.ISBN.valid
+                isValid={
+                    bookForm.Title.valid &&
+                    bookForm.Author.valid &&
+                    bookForm.ISBN.valid
                 }
                 text='Submit'
             />
