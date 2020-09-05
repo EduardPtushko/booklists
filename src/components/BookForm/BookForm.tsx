@@ -2,7 +2,7 @@ import React, { FormEvent, ChangeEvent } from 'react';
 import Input from '../UI/Input/Input';
 import Button from '../UI/Button/Button';
 import checkValidity from '../../utils/validation';
-import v4 from 'uuid';
+import { v4 } from 'uuid';
 import { Book } from '../../types/types';
 
 interface Props {
@@ -83,7 +83,7 @@ const BookForm = ({ onAddBook }: Props): JSX.Element => {
 
     return (
         <form onSubmit={handleSubmit}>
-            {Object.keys(bookForm).map(bookInput => (
+            {Object.keys(bookForm).map((bookInput) => (
                 <Input
                     onChange={handleChange}
                     key={bookInput}

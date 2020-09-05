@@ -9,6 +9,7 @@
     font-weight: 300;
     outline: none;
     transition: border-color 0.2s;
+    cursor: pointer;
 
     &:not[disabled]:hover {
         border-color: darken($color-grey, 10);
